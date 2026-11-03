@@ -1,4 +1,3 @@
-
 package main
 
 import (
@@ -9,13 +8,11 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/joho/godotenv"
-	"github.com/jackc/pgx/v5/pgxpool"
-
 	"github.com/FelpsSds/React-Server/internal/api"
 	"github.com/FelpsSds/React-Server/internal/store/pgstore"
-
-	// Mantenha aqui os imports dos pacotes api e pgstore do seu projeto.
+	_ "github.com/FelpsSds/React-Server/internal/store/pgstore"
+	"github.com/jackc/pgx/v5/pgxpool"
+	"github.com/joho/godotenv"
 )
 
 func main() {
